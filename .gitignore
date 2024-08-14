@@ -1,0 +1,6 @@
+[Bb]in
+[oO]bj
+.vs/
+/Idams.WebApi/Idams.WebApi.csproj.user
+/Idams.WebApi/Logs/*
+/Idams.Infrastructure.EntityFramework/Models/Generated/*

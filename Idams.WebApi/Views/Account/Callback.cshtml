@@ -1,0 +1,12 @@
+﻿@using Newtonsoft.Json
+@model string
+@{
+    var token = JsonConvert.SerializeObject(new { type = "token", ViewBag.Token });
+}
+
+
+<h1>Callback - @ViewBag.Token</h1>
+
+<script>
+    window.parent.postMessage(JSON.stringify({ type: "token", value: "@ViewBag.Token" }), '@Model')
+</script>
